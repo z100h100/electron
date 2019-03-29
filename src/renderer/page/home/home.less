@@ -1,0 +1,148 @@
+
+.page-home {
+  height: 100%;
+  box-sizing: border-box;
+  .display {
+    width: 80%;
+    height: 80%;
+    margin: 0 10%;
+    text-align: center;
+    button {
+      height: 50px;
+      width: 100px;
+      background: #161616;
+      font-size: 24px;
+      border: none;
+      color: #d8d8d8;
+      position: fixed;
+      top: 10px;
+      margin-left: -50px;
+      left: 50%;
+      cursor: pointer;
+    }
+  }
+}
+
+.bgColor {
+  padding-top: 100px;
+  background-color: #161616;
+}
+
+.activeAllImg {
+  height: 99%;
+  width: 100%;
+}
+
+.activeWidImg {
+  width: 100%;
+}
+
+.activeHeiImg {
+  height: 100%;
+}
+
+.add-btn {
+  position: fixed;
+  width: auto;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  font-size: 24px;
+  right: 5%;
+  bottom: 5%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.history-list {
+  height: 100%;
+  width: 200px;
+  //overflow-y: scroll;
+  overflow: hidden;
+
+  font-size: 16px;
+  .history-item {
+    margin-top: 20px;
+    padding: 0 20px;
+    &:hover {
+      background-color: blanchedalmond;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+    p:last-child {
+      width: 180px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 12px;
+      overflow: hidden;
+    }
+  }
+  img {
+    float: right;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    &:hover {
+      animation: btn linear 2s infinite;
+    }
+  }
+}
+
+@keyframes btn {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.photo-block {
+  position: absolute;
+  opacity: 0.5;
+  bottom: 0;
+  width: 80%;
+  height: 100px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0 auto;
+  .image-list {
+    height: 100px;
+    li {
+      float: left;
+      cursor: pointer;
+      width: 100px;
+      margin-left: 20px;
+      height: 100px;
+      line-height: 100px;
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+
+  }
+}
+
+.active {
+  border: 2px solid dodgerblue;
+  box-sizing: border-box;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  left: 5%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  right: 5%;
+  opacity: 0.5;
+  cursor: pointer;
+}
